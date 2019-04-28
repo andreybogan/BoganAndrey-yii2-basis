@@ -65,7 +65,7 @@ class Tasks extends ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getResponsibleId()
+    public function getResponsible()
     {
         return $this->hasOne(Users::class, ['id' => 'responsible_id']);
     }
